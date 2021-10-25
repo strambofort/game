@@ -49,5 +49,8 @@ function playAgain() {
   }
 }
 
-let randomNumber = getNumber(100);
+function randomNumber() {
+  let randomNumber = getNumber(50);
+}
+
 randomNumber();
