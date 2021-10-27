@@ -42,15 +42,15 @@ function playAgain() {
   let play = confirm("Хотели бы сыграть еще раз?");
 
   if (play === true) {
-    getNumber(1);
+    getNumber(getRandomInRange(0, 100));
   } else if (!play) {
     alert("Игра окончена");
     return;
   }
 }
 
-function randomNumber() {
-  let randomNumber = getNumber(50);
-}
+getNumber(getRandomInRange(0, 100));
 
-randomNumber();
+function getRandomInRange(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
